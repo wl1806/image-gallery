@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 package-lock.json
+babel.config.json
 
 # testing
 /coverage
