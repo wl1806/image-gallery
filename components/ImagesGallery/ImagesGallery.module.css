@@ -1,3 +1,8 @@
-.container {
-  margin: 20px 50px
+.gallery-container {
+  columns: 6 175px;
+  column-gap: 1rem;
+}
+.gallery-image {
+  margin: 0 1rem 1rem 0;
+  width: 170px;
 }

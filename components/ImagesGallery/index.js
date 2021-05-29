@@ -3,17 +3,21 @@ import PropTypes from 'prop-types';
 import { get } from 'lodash';
 import Layout from '../Layout';
 import styles from './ImagesGallery.module.css'
+import DeferredImage from '../DeferredImage/DeferedImage';
 function ImagesGallery(props){
     const { images } = props
     return (
         <Fragment>
-            <section className={styles['container']}>
+            <section className={styles['gallery-container']}>
                 {images.map(image=>{
                     return (
                         <div key={image._id}>
-                            <image>
-                                
-                            </image>
+                            <DeferredImage
+                                src={image.src}
+                                alt={image.name}
+                                className={styles['gallery-image']}
+                                title={image.name}
+                            />
                         </div>
                     )
                 })}
