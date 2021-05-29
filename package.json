@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run remove && next dev",
     "build": "next build",
-    "start": "next start",
-    "test": "jest"
+    "start": "npm run remove && npm i && npm run build && next start",
+    "copy": "cp \"utils/babel.config.json\" \"babel.config.json\"",
+    "remove": "rm -f \"babel.config.json\"",
+    "test": "npm run copy && jest"
   },
   "dependencies": {
     "next": "10.2.3",
