@@ -1,4 +1,4 @@
-import landingPageImage from './landing-page-image.json'
+import landingPageImage from './constants/landing-page-image.json'
 
 export {
     landingPageImage

@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
+import styles from './Header.module.css'
 import PropTypes from 'prop-types';
 
-function Header({props}){
+function Header(props){
     const { children } = props
 
     return (
         <Fragment>
-            <header>
+            <header className={styles['header-container']}>
                 {children}
             </header>
         </Fragment>
