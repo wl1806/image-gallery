@@ -28,3 +28,9 @@ it will automatically install the dependencies, build, and start the application
 
 Then this application can be opened at http://localhost:3000/
 
+### Running the tests
+
+To run the test, simply use command:
+```
+npm test
+```
