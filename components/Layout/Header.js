@@ -15,7 +15,7 @@ function Header(props){
                             Home
                         </a>
                         <a style={{margin:'5px'}} href="#">
-                            Account
+                            Login
                         </a>
                     </nav>
                 </div>
