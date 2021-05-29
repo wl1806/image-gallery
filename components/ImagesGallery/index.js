@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { get } from 'lodash';
 import Layout from '../Layout';
 import styles from './ImagesGallery.module.css'
-import DeferredImage from '../DeferredImage/DeferedImage';
+import DeferredImage from '../DeferredImage/DeferredImage';
 function ImagesGallery(props){
     const { images } = props
     return (

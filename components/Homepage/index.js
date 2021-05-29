@@ -7,7 +7,7 @@ import ImagesGallery from '../ImagesGallery'
 import styles from './Homepage.module.css'
 import Inputs from '../Inputs';
 
-function HomepageComponent(props){
+function HomepageComponent(){
     const [imageNameFilter, setImageNameFilter] = useState('')
     const images = landingPageImage
         .filter(image=>!imageNameFilter || image.name.indexOf(imageNameFilter)>-1)
