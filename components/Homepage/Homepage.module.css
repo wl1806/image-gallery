@@ -2,3 +2,12 @@
     max-width: 1140px;
     margin: 20px auto;
 }
+
+.search-bar {
+  border-radius: 20px;
+  height: 30px;
+  width: 280px;
+  padding-left: 20px;
+  margin: auto;
+  outline-width: 0;
+}

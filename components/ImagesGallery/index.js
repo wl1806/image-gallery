@@ -11,7 +11,9 @@ function ImagesGallery(props){
             <section className={styles['gallery-container']}>
                 {images.map(image=>{
                     return (
-                        <div key={image._id}>
+                        <div 
+                            className={styles['gallery-item']}
+                            key={image._id}>
                             <DeferredImage
                                 src={image.src}
                                 alt={image.name}
