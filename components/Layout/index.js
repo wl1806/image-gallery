@@ -5,7 +5,7 @@ import { get } from 'lodash';
 import Header from './Header';
 
 function Layout(props){
-    const { children, headerChild } = props
+    const { children, headerChild, headerClassNames } = props
 
     return (
         <Fragment>
@@ -30,6 +30,7 @@ Layout.defaultProps = {
 Layout.propTypes = {
     children: PropTypes.element,
     headerChild: PropTypes.element,
+    headerClassNames: PropTypes.array,
 };
 
 export default Layout;

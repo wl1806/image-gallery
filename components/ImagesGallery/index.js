@@ -29,11 +29,11 @@ function ImagesGallery(props){
 }
 
 ImagesGallery.defaultProps = {
-    
-  };
+    images:[]
+};
   
 ImagesGallery.propTypes = {
-
+    images: PropTypes.array
 };
 
 export default ImagesGallery;
