@@ -1,0 +1,17 @@
+{
+  "env": {
+    "development": {
+      "presets": ["@babel/preset-react", "@babel/preset-env"],
+      "plugins": ["@babel/plugin-transform-react-jsx"]
+     },
+     "production": {
+      // "presets": [ "react", "es2015", "stage-0" ]
+      "presets": ["next/babel"],
+      "plugins": ["@babel/plugin-proposal-logical-assignment-operators"]    
+     },
+    "test": {
+      "presets": ["@babel/preset-react", "@babel/preset-env"],
+      "plugins": ["@babel/plugin-transform-react-jsx"]
+    }
+  }  
+}
